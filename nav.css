@@ -1,0 +1,81 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url(flow.jpg);
+    background-size:cover;
+    background-position:center;
+    
+    font-family:sans-serif;
+}
+.menu-bar{
+    background:aqua;
+    text-align:center;
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color:blueviolet;
+}
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration:none;
+     color:purple;
+}
+.active, .menu-bar ul li:hover{
+    background:white;
+    border-radius:3px;
+}
+.menu-bar .fa{
+    margin-right:5px;
+}
+.sub-menu-1{
+    display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+   display:block;
+   position:absolute;
+   background:aqua;
+   margin-top:15px;
+   margin-left:-15px; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding:10x;
+    border-bottom:1px dotted white;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom:none;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:blue;
+}
+.fa-angle-right{
+   float:right; 
+}
+.sub-menu-2{
+    display:none;
+
+}
+.hover-me:hover  .sub-menu-2{
+    position:absolute;
+    display:block;
+    margin-top:-40px;
+    margin-left:140px;
+    background:royalblue;
+}
